@@ -16,16 +16,12 @@ echo "
 echo "Loading.."
 
 sleep 2
-echo "Enter file name"
-read name
-sleep 1
 echo "Enter your link:"
 read link
 echo "loading, please wait.."
 sleep 3
 
-wget -O $name $link
-
+wget $link -P downloads
 
 
 
