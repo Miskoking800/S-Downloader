@@ -22,7 +22,7 @@ echo "loading, please wait.."
 sleep 3
 
 wget $link -P downloads
-
+echo "Done!"
 
 
 
