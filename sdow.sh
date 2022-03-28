@@ -14,15 +14,43 @@ echo "
 
 
 echo "Loading.."
-
 sleep 2
+
+echo "
+1 - start downloading
+"
+echo "Select option"
+read option
+
+
+if [ $option == "1" ]
+then
 echo "Enter your link:"
+
 read link
+
 echo "loading, please wait.."
+
 sleep 3
 
 wget $link -P downloads
 echo "Done!"
+fi
+sleep 1
+echo "
+1 - Restart
+"
+
+
+
+echo "Select option"
+read option1
+
+
+if [ $option1 == "1" ]
+then
+bash sdow.sh
+fi
 
 
 
